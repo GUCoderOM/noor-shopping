@@ -1,0 +1,24 @@
+{% extends 'shopping/base.html' %}
+{% load static %}
+{% block body_block%}
+<div class = "banner">
+  <img src = {{sub.picture}} alt = {{sub.name}}/>
+</div>
+<div class="container">
+  <div class="row">
+      <div class="col">
+
+          <!-- PHOTO GALLERY -->
+          <section class="photo_gallery">
+              {% for p in products %}
+              <div class="box-element product">
+                <a href="{% url 'shopping:product' p.name %} "><img class="thumbnail" src={{ p.picture }} /></a>
+                     <h6><strong>{{p.name}}</strong></h6>
+               </div>
+              {% endfor %}
+          </section>
+
+      </div>
+  </div>
+</div>
+{% endblock %}

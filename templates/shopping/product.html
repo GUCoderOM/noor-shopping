@@ -1,0 +1,14 @@
+{% extends 'shopping/base.html' %}
+{% load static %}
+{% block body_block%}
+<div class="product-image">
+  <img class="thumbnail" src={{ p.picture }} />
+    <p><b>{{p.name}}</b> <br /><br /><br /><br /><br /><br />
+      Your description here.
+      <br /><br /><br /><br /><br />
+      <b>{{p.price}} OMR</b><br /><br />
+      <button type="button" class="btn btn-outline-primary">Purchase</button>
+    </p>
+
+</div>
+{% endblock %}

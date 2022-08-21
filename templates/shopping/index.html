@@ -1,0 +1,34 @@
+{% extends 'shopping/base.html' %}
+{% load static %}
+{% block body_block%}
+<div>
+  <img class = 'img-responsive'src = "{% static 'images/shopping_banner2.jpg' %}" />
+</div>
+<div class = 'dealsbanner'>
+
+    <img src = "{% static 'images/deals_banner.jpg' %}"/>
+    <a href = "{% url 'shopping:about' %}">
+    <div class="centered">DEALS</div>
+    </a>
+</div>
+<div class="container">
+  <div class="row">
+      <div class="col">
+
+          <!-- PHOTO GALLERY -->
+          <section class="photo_gallery">
+              {% for c in cat %}
+              <div class="box-element product">
+                <a href="{% url 'shopping:category' c.name %} "><img class="thumbnail" src={{ c.picture }} /></a>
+                     <h6><strong>{{c.name}}</strong></h6>
+               </div>
+              {% endfor %}
+          </section>
+
+      </div>
+  </div>
+</div>
+{% endblock %}
+<!-- font: NeueMontreal
+website:https://anablagojevic.com/en/about #007aff #f8d790
+-->

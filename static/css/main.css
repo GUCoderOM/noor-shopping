@@ -1,0 +1,179 @@
+html{
+  text-align: center;
+  font-size: 150%;
+  font-family: Gothic,CenturyGothic,AppleGothic,sans-serif;
+  height: 100%;
+}
+
+.navbar{
+  background-color: rgb(248, 250, 249,0.6);
+}
+.navbar:hover{
+  background-color: rgb(248, 250, 249,1);
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  top: 0;
+  right: 0;
+}
+.banner{
+  width: 100%;
+  height: 300px;
+}
+.banner img{
+  object-position: center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.box-element{
+	border-radius: 4px;
+	padding: 10px;
+}
+.categories{
+  width: 100%;
+}
+.subcat{
+  width: 350px;
+}
+.horizontal{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  object-fit: contain;
+}
+.horizontal li{
+  float: left;
+  list-style: none;
+}
+.horizontal figure img{
+  width: 100%;
+  border-radius: 10%;
+  padding-left: 20px;
+
+
+}
+.horizontal figure:hover img{
+  width: 350px;
+}
+.horizontal a:hover{
+  text-decoration: none;
+}
+.mr-auto .nav-link{
+  color: black !important;
+}
+.main-action, .main-action .nav-link{
+  border: 1px solid black !important;
+  color: black !important;
+  transition-duration: 0.5s;
+
+}
+.main-action:hover,.main-action .nav-link:hover {
+  background-color: black !important;
+  color: white !important;
+}
+.mr-auto a:hover{
+  text-decoration: underline !important;
+
+}
+.img-responsive{
+  width:100%;
+  height:100%;
+}
+.dealsbanner{
+  height:300px;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top:10px;
+}
+.centered {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  border-radius:10%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1)
+}
+
+.centered:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -300px;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-30deg);
+  animation-name:shine;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shine {
+                from {
+                    left: -300px;
+                }
+                to {
+                     left: 250px;
+                }
+            }
+.dealsbanner img{
+  object-position: center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.photo_gallery {
+    display: flex;
+}
+
+.photo_gallery a {
+    }
+
+.photo_gallery img, .product-image img {
+        object-position: center;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+    }
+
+.product-image{
+  display: flex;
+  justify-content: space-evenly;
+  height:600px;
+  width: 100%;
+  margin: 0%;
+}
+.product-image img{
+  height:600px;
+  width: 600px;
+}
+.product-image{
+
+
+  text-align: center;
+}
+.product-image b{
+  font-size: 40px;
+}
+.btn{
+  border-color: black !important;
+  color: black !important;
+}
+.btn:hover{
+  background-color: black !important;
+  color: white !important;
+  border-color: white !important;
+}
+/*openingimg {
+  max-width: 150%;
+  transform: translate(50%, 80%);
+
+}*/

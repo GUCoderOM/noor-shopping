@@ -1,0 +1,24 @@
+{% extends 'shopping/base.html' %}
+{% load static %}
+{% block body_block%}
+  <div class = "banner">
+    <img src = {{cat.picture}} alt = {{cat.name}}/>
+  </div>
+  <div class="container">
+    <div class="row">
+        <div class="col">
+
+            <!-- PHOTO GALLERY -->
+            <section class="photo_gallery">
+                {% for s in sub %}
+                <div class="box-element product">
+                  <a href="{% url 'shopping:subcategory' s.name %} "><img class="thumbnail" src={{ s.picture }} /></a>
+  				             <h6><strong>{{s.name}}</strong></h6>
+                 </div>
+                {% endfor %}
+            </section>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
