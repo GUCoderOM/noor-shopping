@@ -1,3 +1,4 @@
+adjustText==0.7.3
 altair==4.2.0
 argon2-cffi==21.3.0
 argon2-cffi-bindings==21.2.0
@@ -5,7 +6,9 @@ asgiref==3.5.2
 astor==0.8.1
 asttokens==2.0.5
 attrs==21.4.0
+autograd @ git+https://github.com/HIPS/autograd@01eacff7a4f12e6f7aebde7c4cb4c1c2633f217d
 backcall==0.2.0
+backports.zoneinfo==0.2.1
 base58==2.1.1
 bcrypt==3.2.0
 bleach==4.1.0
@@ -39,12 +42,14 @@ GitPython==3.1.27
 htbuilder==0.6.0
 idna==2.10
 importlib-metadata==4.11.2
+importlib-resources==5.9.0
 ipykernel==6.9.1
 ipython==8.1.1
 ipython-genutils==0.2.0
 ipywidgets==7.6.5
 iteration-utilities==0.11.0
 jedi==0.18.1
+jhwutils @ https://github.com/johnhw/jhwutils/zipball/master
 Jinja2==3.0.3
 jmespath==0.10.0
 joblib==1.1.0
