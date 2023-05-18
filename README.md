@@ -57,7 +57,7 @@ python populate_shop.py
 python manage.py runserver
 ```
 
-Now, you can access the application on your browser at http://[localhost:8000](http://127.0.0.1:8000/)
+Now, you can access the application on your browser at [http://localhost:8000](http://127.0.0.1:8000/)
 
 ## Note
 
